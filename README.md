@@ -24,19 +24,19 @@ This project is a practice implementation of Redux and Redux Toolkit using React
 1. Clone the repository:
    ```sh
    git clone https://github.com/rifaj007/learning-redux.git
-   ```
+
 2. Navigate to the project folder:
    ```sh
    cd learning-redux
-   ```
+
 3. Install dependencies:
    ```sh
    npm install
-   ```
+
 4. Start the development server:
    ```sh
    npm run dev
-   ```
+
 
 ## 📜 Scripts
 
