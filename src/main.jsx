@@ -3,15 +3,21 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./pages/home/Home.jsx";
+import { Provider } from "react-redux";
+import store from "./redux/store.js";
+import CartPage from "./pages/carts/CartPage.jsx";
+import AllProducts from "./pages/products/AllProducts.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <Routes>
-      <Route element={<App />}>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/products" element={<div>Products page</div>}/>
-        <Route path="/cart" element={<div>Cart page</div>}/>
-      </Route>
-    </Routes>
-  </BrowserRouter>
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<App />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<AllProducts />} />
+          <Route path="/cart" element={<CartPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </Provider>
 );

@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="bg-white text-black min-h-screen">
       <Navbar />
-      <main className="container mx-auto">
+      <main className="container px-4 mx-auto">
         <Outlet />
       </main>
     </div>
