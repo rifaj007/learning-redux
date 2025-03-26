@@ -3,7 +3,6 @@
 This project is a practice implementation of Redux and Redux Toolkit using React, Vite, and Tailwind CSS. It includes a cart system to enhance state management skills with Redux.
 
 ```
-
 ## 🚀 Features
 
 - **Cart System:** Add products to the cart.
